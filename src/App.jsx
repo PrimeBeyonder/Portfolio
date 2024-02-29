@@ -8,6 +8,7 @@ import Service from './components/services/Service';
 import Skill from './components/skills/Skill';
 import Testimonial from './components/Testimonials/Testimonial';
 import Contact from './components/contact/Contact';
+import Footer from './components/footer/Footer';
 
 function App() {
 
@@ -23,6 +24,7 @@ function App() {
         <Qulification />
         <Testimonial />
         <Contact />
+        <Footer />
       </main>
     </>
   )
