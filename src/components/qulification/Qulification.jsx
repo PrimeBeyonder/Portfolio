@@ -7,7 +7,7 @@ const Qulification = () => {
         setToggle(index);
     }
     return (
-        <section className="qulification section">
+        <section id='qulification' className="qulification section">
             <h2 className="section__title">Qualification</h2>
             <span className="section__subtitle">What I Offer</span>
             <div className="qulification__container container">
