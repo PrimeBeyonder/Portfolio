@@ -1,12 +1,12 @@
 import './about.css';
 import React from 'react';
-import AboutImg from '../../assets/about.jpg';
+import AboutImg from '../../assets/toji-is-back.avif';
 import CV from '../../assets/John-Cv.pdf';
 import Info from './info';
 
 const About = () => {
     return (
-        <section className="about section" id='about'>
+        <section className="about section" id='about-animation'>
             <h2 className="section__title">
                 About Me
             </h2>
