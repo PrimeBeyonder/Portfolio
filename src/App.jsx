@@ -3,6 +3,7 @@ import './App.css'
 import About from './components/about/About';
 import Header from './components/header/Header';
 import Home from './components/home/Home';
+import SKill from "./skills/Skill";
 import Qulification from './components/qulification/Qulification';
 import Service from './components/services/Service';
 import Testimonial from './components/Testimonials/Testimonial';
@@ -11,7 +12,6 @@ import Footer from './components/footer/Footer';
 import ScrollUp from './components/scrollup/ScrollUp';
 import ScrollReveal from 'scrollreveal';
 import { useEffect } from 'react';
-import Skill from './skills/Skill';
 
 function App() {
   useEffect(() => {
@@ -24,9 +24,9 @@ function App() {
     sr.reveal(
       `#about-animation,
       #contact,
+      #skill,
       #footer,
       #home,
-      #skills,
       #header,
       #qulification,
       #services,
@@ -43,7 +43,7 @@ function App() {
       <main className="main">
         <Home />
         <About />
-        <Skill />
+        <SKill />
         <Service />
         <Qulification />
         <Testimonial />

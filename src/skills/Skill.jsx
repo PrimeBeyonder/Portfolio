@@ -84,7 +84,7 @@ const Skill = () => {
         },
     ];
     return (
-        <section className='skills__section container' id='skills'>
+        <section className='skills__section container' id='skill'>
             <h2 className="section__title">Skills</h2>
             <span className="section__subtitle">What Do i Know</span>
 
