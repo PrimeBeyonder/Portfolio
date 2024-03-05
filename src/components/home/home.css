@@ -18,11 +18,11 @@
 
 .home__social-icon {
     font-size: 1.26rem;
-    color: var(--title-color);
+    color: var(--button-color);
 }
 
 .home__social-icon:hover {
-    color: var(--title-color-dark);
+    color: var(--button-color-dark);
 }
 
 .home__title {
@@ -36,12 +36,18 @@
     margin-left: 0.4rem;
 }
 
+.txt-rotate>.wrap {
+    border-right: 0.08em solid #666;
+}
+
 .home__subtitle {
     position: relative;
-    font-size: var(--h3-font-size);
+    font-size: 20px !important;
     padding-left: 5.4rem;
+    font-weight: 500;
     font-weight: var(--font-normal);
     margin-bottom: var(--mb-1);
+    display: block;
 }
 
 .home__subtitle::before {
@@ -64,7 +70,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    box-shadow: inset 0 0 0 9px rgb(255 255 255 / 30%);
+    box-shadow: inset 0 2px 0 6px rgba(29, 144, 205, 0.88);
     order: 1;
     justify-self: center;
     width: 300px;

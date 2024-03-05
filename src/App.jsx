@@ -1,6 +1,6 @@
-
 import './App.css'
 import About from './components/about/About';
+import Portfolio from "./components/portfolio/Portfolio";
 import Header from './components/header/Header';
 import Home from './components/home/Home';
 import SKill from "./skills/Skill";
@@ -17,8 +17,8 @@ function App() {
   useEffect(() => {
     const sr = ScrollReveal({
       origin: "top",
-      distance: "60px",
-      duration: 1000,
+      distance: "65px",
+      duration: 1500,
       reset: true,
     });
     sr.reveal(
@@ -27,6 +27,7 @@ function App() {
       #skill,
       #footer,
       #home,
+      #portfolio,
       #header,
       #qulification,
       #services,
@@ -44,6 +45,7 @@ function App() {
         <Home />
         <About />
         <SKill />
+        <Portfolio />
         <Service />
         <Qulification />
         <Testimonial />

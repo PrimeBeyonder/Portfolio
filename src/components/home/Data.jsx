@@ -1,6 +1,46 @@
-import React from 'react'
+import TrackVisibility from 'react-on-screen';
+import React, { useState, useEffect } from 'react';
 
 const Data = () => {
+
+    const [loopNum, setLoopNum] = useState(0);
+    const [isDeleting, setIsDeleting] = useState(false);
+    const [text, setText] = useState('');
+    const [delta, setDelta] = useState(30 - Math.random() * 100);
+    const [index, setIndex] = useState(1);
+    const toRotate = ["Laravel Developer", "React Developer", "Junior Web Developer"];
+    const period = 700;
+
+    useEffect(() => {
+        let ticker = setInterval(() => {
+            tick();
+        }, delta);
+        return () => { clearInterval(ticker) };
+    }, [text])
+    const tick = () => {
+        let i = loopNum % toRotate.length;
+        let fulltext = toRotate[i];
+        let updateText = isDeleting ? fulltext.substring(0, text.length - 1) : fulltext.substring(0, text.length + 1);
+        setText(updateText);
+
+        if (isDeleting) {
+            setDelta(prevDelta => prevDelta / 2);
+        }
+        if (!isDeleting && updateText === fulltext) {
+            setIsDeleting(true);
+            setIndex(prevIndex => prevIndex - 1);
+            setDelta(period);
+        } else if (isDeleting && updateText === '') {
+            setIsDeleting(false);
+            setLoopNum(loopNum + 1);
+            setIndex(1);
+            setDelta(300);
+        } else {
+            setIndex(prevIndex => prevIndex + 1);
+        }
+    }
+
+
     return (
         <div className="home__data" id='home'>
             <h1 className="home__title">Andrew
@@ -54,9 +94,11 @@ const Data = () => {
                     ></path>
                 </svg>
             </h1>
-            <h3 className="home__subtitle">
-                Frontend Developer
-            </h3>
+
+            <TrackVisibility>
+                <h3 className='home__subtitle'><span className="txt-rotate" dataPeriod="600" data-rotate='[ "Laravel Developer", "React Developer", "Junior Web Developer" ]'><span className="wrap">{text}</span></span></h3>
+            </TrackVisibility>
+
             <p className="home__description">
                 I'm creative designer based in New York, and I'm very passionate and dedicated to my work.
             </p>
