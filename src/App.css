@@ -16,6 +16,7 @@
   --text-color: hsl(var(--hue), var(--sat), 46%);
   --body-color: hsl(var(--hue), var(--sat), 98%);
   --container-color: #fff;
+  --botton-text-color: rgb(21, 21, 21);
 
   /*========== Font and typography ==========*/
   --body-font: "Poppins", sans-serif;
@@ -50,7 +51,31 @@
   --z-tooltip: 10;
   --z-fixed: 100;
   --z-modal: 1000;
+
 }
+
+[data-theme="dark"] {
+  --title-color: rgba(255, 255, 255, 0.875);
+  --title-color-dark: white;
+  --button-color: rgba(75, 101, 169, 0.979);
+  --button-color-dark: rgb(40, 61, 113);
+  --text-color: rgb(224, 217, 217);
+  --container-color: #403d3d;
+  --botton-text-color: white;
+
+}
+body [data-theme="dark"]{
+  --body-color: #302e2e;
+  background-color: var(--body-color);
+  color: var(--text-color);
+}
+
+body {
+  --body-color: #ffffff;
+  background-color: var(--body-color);
+  color: var(--text-color);
+}
+
 
 /* Responsive typography */
 @media screen and (max-width: 992px) {
@@ -152,7 +177,7 @@ img {
 .button {
   display: inline-block;
   background-color: var(--button-color);
-  color: var(--container-color);
+  color: var(--botton-text-color);
   padding: 1.25rem 2rem;
   border-radius: 1rem;
   font-weight: var(--font-medium);
