@@ -1,5 +1,5 @@
 .switch {
-    font-size: 17px;
+    font-size: 19px;
     position: relative;
     display: inline-block;
     width: 64px;
@@ -15,7 +15,7 @@
 .flex-end {
     display: flex;
     justify-content: end;
-    margin-right:2rem ;
+    margin-right: 2rem;
 }
 
 .slider {
@@ -62,45 +62,7 @@
     height: 24px;
 }
 
-/* .switch:hover */
-.sun svg {
-    animation: rotate 15s linear infinite;
-}
 
-@keyframes rotate {
-
-    0% {
-        transform: rotate(0);
-    }
-
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
-/* .switch:hover */
-.moon svg {
-    animation: tilt 5s linear infinite;
-}
-
-@keyframes tilt {
-
-    0% {
-        transform: rotate(0deg);
-    }
-
-    25% {
-        transform: rotate(-10deg);
-    }
-
-    75% {
-        transform: rotate(10deg);
-    }
-
-    100% {
-        transform: rotate(0deg);
-    }
-}
 
 .input:checked+.slider {
     background-color: #183153;

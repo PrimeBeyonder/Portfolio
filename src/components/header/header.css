@@ -19,7 +19,11 @@
     column-gap: 1rem;
 }
 
-.nav__logo,
+.nav__logo {
+    color: var(--title-color-dark);
+    font-weight: 600;
+}
+
 .nav__toggle {
     color: var(--title-color);
     font-weight: var(--font-medium);

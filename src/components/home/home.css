@@ -37,6 +37,7 @@
 }
 
 .txt-rotate>.wrap {
+    font-size: 1.4rem;
     border-right: 0.08em solid #666;
 }
 
@@ -53,11 +54,11 @@
 .home__subtitle::before {
     content: '';
     position: absolute;
-    width: 70px;
-    height: 1px;
+    width: 60px;
+    height: 3px;
     background-color: var(--text-color);
     left: 0;
-    top: 1rem;
+    top: 1.3rem;
 }
 
 .home__description {
@@ -168,7 +169,7 @@
 
     .home__subtitle::before {
         width: 42px;
-        top: 0.8rem;
+        top: 1.2rem;
     }
 
     .home__description {
