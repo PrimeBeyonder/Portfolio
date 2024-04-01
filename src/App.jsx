@@ -16,6 +16,26 @@ import "./components/theme/toggle.css";
 
 function App() {
   const [toggle, setToggle] = useState(true);
+
+useEffect(()=>{
+const sr = ScrollReveal({
+  origin: "left",
+  distance: "65px",
+      duration: 1500,
+      reset: true,
+});
+sr.reveal(
+`  #skill,
+      #footer,
+      #home,
+      #portfolio,
+      #header` , {
+        opacity: 0,
+  
+      }
+)
+},[])
+
   useEffect(() => {
     const sr = ScrollReveal({
       origin: "top",
