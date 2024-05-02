@@ -27,11 +27,16 @@ useEffect(() =>{
   });
   sr.reveal("#header_amination" , {origin: "top", delay:100, duration:500, reset:false });
   sr.reveal("#socail__icon-animaton" , {origin: "left", delay:500 });
+  sr.reveal(".about__img" , {origin: "left", delay:300 });
   sr.reveal("#home__img-animation" , {origin: "right" , delay:500});
   sr.reveal("#scroll_down-animation" , { delay:200});
+  sr.reveal("#downlaod__btn_animation" , { delay:600});
   sr.reveal("#home_data-animation" , { delay:400 , distance: "30px" , interval:150});
   sr.reveal("#home__description-animation" , { delay:500 , distance: "35px" , interval:200});
   sr.reveal(".section__title" , { distance: "35px" , interval:200});
+  sr.reveal(".about__description" , { distance: "35px" , interval:200});
+  sr.reveal(".section__subtitle" , { distance: "45px" ,duration: 300 ,interval:300});
+  sr.reveal(".about__box" , { distance: "45px" ,duration: 300 ,interval:300});
 })
 
   return (

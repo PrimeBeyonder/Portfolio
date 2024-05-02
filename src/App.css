@@ -145,12 +145,14 @@ img {
 .section__title {
   font-size: var(--h1-font-size);
   color: var(--title-color);
+  margin-bottom: 1.4rem;
+  margin-top: 2rem;
 }
 
 .section__subtitle {
   display: block;
   font-size: var(--small-font-size);
-  margin-bottom: 4rem;
+  margin-bottom: 10rem;
 }
 
 .section__title,
