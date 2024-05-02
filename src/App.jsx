@@ -17,48 +17,22 @@ import "./components/theme/toggle.css";
 function App() {
   const [toggle, setToggle] = useState(true);
 
-useEffect(()=>{
-const sr = ScrollReveal({
-  origin: "left",
-  distance: "65px",
-      duration: 1500,
-      reset: true,
-});
-sr.reveal(
-`  #skill,
-      #footer,
-      #home,
-      #portfolio,
-      #header` , {
-        opacity: 0,
-  
-      }
-)
-},[])
-
-  useEffect(() => {
-    const sr = ScrollReveal({
-      origin: "top",
-      distance: "65px",
-      duration: 1500,
-      reset: true,
-    });
-    sr.reveal(
-      `#about-animation,
-      #contact,
-      #skill,
-      #footer,
-      #home,
-      #portfolio,
-      #header,
-      #qulification,
-      #services,
-      #testimonials`, {
-      opacity: 0,
-
-    }
-    );
-  }, []);
+useEffect(() =>{
+  const sr = ScrollReveal({
+    origin: "bottom",
+    distance: "55px",
+    duration: 1000,
+    reset:true,
+    delay: 250,
+  });
+  sr.reveal("#header_amination" , {origin: "top", delay:100, duration:500, reset:false });
+  sr.reveal("#socail__icon-animaton" , {origin: "left", delay:500 });
+  sr.reveal("#home__img-animation" , {origin: "right" , delay:500});
+  sr.reveal("#scroll_down-animation" , { delay:200});
+  sr.reveal("#home_data-animation" , { delay:400 , distance: "30px" , interval:150});
+  sr.reveal("#home__description-animation" , { delay:500 , distance: "35px" , interval:200});
+  sr.reveal(".section__title" , { distance: "35px" , interval:200});
+})
 
   return (
     <div data-theme={toggle ? "light" : "dark"}>
