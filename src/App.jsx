@@ -37,6 +37,8 @@ useEffect(() =>{
   sr.reveal(".about__description" , { distance: "35px" , interval:200});
   sr.reveal(".section__subtitle" , { distance: "45px" ,duration: 300 ,interval:300});
   sr.reveal(".about__box" , { distance: "45px" ,duration: 300 ,interval:300});
+  sr.reveal(".skill__content" , { origin: "left"});
+  sr.reveal(".certi__container" , { origin: "right"});
 })
 
   return (
