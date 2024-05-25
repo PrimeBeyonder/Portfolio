@@ -27,6 +27,7 @@ useEffect(() =>{
   });
   sr.reveal("#header_amination" , {origin: "top", delay:100, duration:500, reset:false });
   sr.reveal("#socail__icon-animaton" , {origin: "left", delay:500 });
+  sr.reveal("#footer" , {delay:500 });
   sr.reveal(".about__img" , {origin: "left", delay:300 });
   sr.reveal(".talkToMe" , {origin: "left", delay:300 });
   sr.reveal(".Education" , {origin: "left", delay:300 });
