@@ -9,7 +9,7 @@ const Contact = () => {
 
             <div className="contact__container container grid">
                 <div className="contact__content">
-                    <h3 className="contact__title">Talk To Me</h3>
+                    <h3 className="contact__title talkToMe">Talk To Me</h3>
                     <div className="contact__info">
                         <div className="contact__card">
                             <i className="bx bx-mail-send contact__card-icon"></i>
@@ -32,7 +32,7 @@ const Contact = () => {
                     </div>
                 </div>
                 <div className="contact__content">
-                    <h3 className="contact__title">Write Me Your Project</h3>
+                    <h3 className="contact__title writeMe">Write Me Your Project</h3>
                     <form className="contact__form">
                         <div className="contact__form-div ">
                             <label className="contact__form-tag">Name</label>
