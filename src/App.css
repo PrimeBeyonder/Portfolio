@@ -179,6 +179,7 @@ img {
   color: var(--botton-text-color);
   padding: 1.25rem 2rem;
   border-radius: 1rem;
+  cursor: pointer;
   font-weight: var(--font-medium);
   transition: all 0.5s ease-in;
 }
