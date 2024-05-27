@@ -58,17 +58,17 @@
   --container-color: #403d3d;
   --botton-text-color: white;
   transition: all 0.5s ease-in;
+  --body-color: #302e2e;
 
 }
 
 body [data-theme="dark"] {
-  --body-color: #302e2e;
   background-color: var(--body-color);
   color: var(--text-color);
   transition: all 0.5s ease-in;
 }
 
-body {
+body[data-theme= "light"] {
   --body-color: #ffffff;
   background-color: var(--body-color);
   color: var(--text-color);
