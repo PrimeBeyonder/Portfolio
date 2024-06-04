@@ -1,5 +1,6 @@
 .skills__section {
     max-height: 500px;
+    margin-bottom: 120px;
 }
 
 .skills__container {
@@ -64,6 +65,7 @@ span {
 @media screen and (max-width: 798px) {
     .skills__section {
         max-height: fit-content;
+        margin-bottom: 120px;
     }
 
     .skills__container {
@@ -96,7 +98,7 @@ span {
 
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 606px) {
     .skill__content {
         display: grid;
         margin-left: auto;
@@ -145,7 +147,7 @@ span {
 }
 
 /* For small devices */
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 440px) {
     .skill__content {
         display: grid;
         margin-left: auto;

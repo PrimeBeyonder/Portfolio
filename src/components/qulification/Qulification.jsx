@@ -12,11 +12,11 @@ const Qulification = () => {
             <span className="section__subtitle">What I Offer</span>
             <div className="qulification__container container">
                 <div className="qulification__tabs">
-                    <div className="qulification__button button--flex" onClick={() => toggleTab(1)}>
+                    <div className="qulification__button Education button--flex" onClick={() => toggleTab(1)}>
                         <i className={toggle === 1 ? 'uil uil-graduation-cap qulification__active qulification__icon' : 'uil uil-graduation-cap qulification__icon'}
                         ></i>Education
                     </div>
-                    <div className="qulification__button button--flex" onClick={() => toggleTab(2)}>
+                    <div className="qulification__button button--flex Experience" onClick={() => toggleTab(2)}>
                         <i className={toggle === 2 ? 'uil uil-graduation-cap qulification__active qulification__icon' : 'uil uil-graduation-cap qulification__icon'}
                         ></i>Experience
                     </div>

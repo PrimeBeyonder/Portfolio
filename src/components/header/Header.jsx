@@ -7,8 +7,8 @@ const Header = () => {
     const [Toggle, showMenu] = useState(false);
 
     return (
-        <header className="header">
-            <nav className="nav container">
+        <header className="header" >
+            <nav className="nav container" id='header_amination'>
                 <a href="index.html" className="nav__logo">
                     Andrew
                 </a>

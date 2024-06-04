@@ -2,12 +2,12 @@ import './about.css';
 import React from 'react';
 import AboutImg from '../../assets/toji-is-back.avif';
 // import AboutImg from "../../assets/profile.jpg"
-import CV from '../../assets/John-Cv.pdf';
+import CV from "../../assets/Andrew'sResume.pdf";
 import Info from './info';
 
 const About = () => {
     return (
-        <section className="about section" id='about-animation'>
+        <section className="about section">
             <h2 className="section__title">
                 About Me
             </h2>
@@ -20,7 +20,7 @@ const About = () => {
                     <p className="about__description">
                         Frontend Developer, I create Web Pages with UI / UX user Interface, I have years of experience and many clients are happy with the projects carried out
                     </p>
-                    <a download='' href={CV} className="button button--flex">Download CV
+                    <a download='' href={CV} className="button button--flex" id=' downlaod__btn_animation'>Download CV
                         <svg
                             class="button__icon"
                             xmlns="http://www.w3.org/2000/svg"

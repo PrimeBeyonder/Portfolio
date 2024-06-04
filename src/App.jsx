@@ -15,61 +15,64 @@ import { useEffect, useState } from 'react';
 import "./components/theme/toggle.css";
 
 function App() {
-  const [toggle, setToggle] = useState(true);
+  const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
 
-useEffect(()=>{
-const sr = ScrollReveal({
-  origin: "left",
-  distance: "65px",
-      duration: 1500,
-      reset: true,
-});
-sr.reveal(
-`  #skill,
-      #footer,
-      #home,
-      #portfolio,
-      #header` , {
-        opacity: 0,
+  useEffect(()=>{
+   document.body.setAttribute("data-theme" , theme);
+    localStorage.setItem("theme" , theme);
+  }, [theme]);
   
-      }
-)
-},[])
+  const changeTheme = () =>{
+    setTheme((prevTheme) => prevTheme === "light" ? "dark" : "light");
+  }
 
-  useEffect(() => {
-    const sr = ScrollReveal({
-      origin: "top",
-      distance: "65px",
-      duration: 1500,
-      reset: true,
-    });
-    sr.reveal(
-      `#about-animation,
-      #contact,
-      #skill,
-      #footer,
-      #home,
-      #portfolio,
-      #header,
-      #qulification,
-      #services,
-      #testimonials`, {
-      opacity: 0,
-
-    }
-    );
-  }, []);
+useEffect(() =>{
+  const sr = ScrollReveal({
+    origin: "bottom",
+    distance: "55px",
+    duration: 1000,
+    reset:false,
+    delay: 250,
+  });
+  sr.reveal("#header_amination" , {origin: "top", delay:100, duration:500, reset:false });
+  sr.reveal("#socail__icon-animaton" , {origin: "left", delay:500 });
+  sr.reveal("#footer" , {delay:500 });
+  sr.reveal(".about__img" , {origin: "left", delay:300 });
+  sr.reveal(".talkToMe" , {origin: "left", delay:300 });
+  sr.reveal(".Education" , {origin: "left", delay:300 });
+  sr.reveal("#home__img-animation" , {origin: "right" , delay:500});
+  sr.reveal(".Experience" , {origin: "right" , delay:500});
+  sr.reveal(".writeMe" , {origin: "right" , delay:500});
+  sr.reveal("#scroll_down-animation" , { delay:200});
+  sr.reveal("#downlaod__btn_animation" , { origin:"bottom" ,delay:600});
+  sr.reveal("#home_data-animation" , { delay:400 , distance: "30px" , interval:150});
+  sr.reveal("#home__description-animation" , { delay:500 , distance: "35px" , interval:200});
+  sr.reveal(".contact__form" , { delay:500 , distance: "35px" , interval:200});
+  sr.reveal(".section__title" , { distance: "35px" , interval:200});
+  sr.reveal(".section__title" , { distance: "35px" , interval:200});
+  sr.reveal(".about__description" , { distance: "35px" , interval:200});
+  sr.reveal(".section__subtitle" , { distance: "45px" ,duration: 300 ,interval:300});
+  sr.reveal(".abt-btn" , { distance: "45px" ,duration: 300 ,interval:300});
+  sr.reveal(".qulification__sections" , { distance: "45px" ,duration: 300 ,interval:300});
+  sr.reveal(".about__box" , { distance: "45px" ,duration: 300 ,interval:300});
+  sr.reveal(".contact__card" , { distance: "45px" ,duration: 300 ,interval:300});
+  sr.reveal(".contact__form" , { distance: "45px" ,duration: 300 ,interval:300});
+  sr.reveal(".portfolio__content" , { distance: "45px" ,duration: 300 ,interval:300});
+  
+  sr.reveal(".skill__content" , { origin: "left"});
+  sr.reveal(".certi__container" , { origin: "right"});
+})
 
   return (
-    <div data-theme={toggle ? "light" : "dark"}>
+    <div data-theme={theme ? "light" : "dark"} className='themed-div'>
       <Header />
-      <div className='section container gird flex-end' >
-        <label class="switch" >
-          <span class="sun"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g fill="#ffd43b"><circle r="5" cy="12" cx="12"></circle><path d="m21 13h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm-17 0h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm13.66-5.66a1 1 0 0 1 -.66-.29 1 1 0 0 1 0-1.41l.71-.71a1 1 0 1 1 1.41 1.41l-.71.71a1 1 0 0 1 -.75.29zm-12.02 12.02a1 1 0 0 1 -.71-.29 1 1 0 0 1 0-1.41l.71-.66a1 1 0 0 1 1.41 1.41l-.71.71a1 1 0 0 1 -.7.24zm6.36-14.36a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm0 17a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm-5.66-14.66a1 1 0 0 1 -.7-.29l-.71-.71a1 1 0 0 1 1.41-1.41l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.29zm12.02 12.02a1 1 0 0 1 -.7-.29l-.66-.71a1 1 0 0 1 1.36-1.36l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.24z"></path></g></svg></span>
-          <span class="moon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="m223.5 32c-123.5 0-223.5 100.3-223.5 224s100 224 223.5 224c60.6 0 115.5-24.2 155.8-63.4 5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6-96.9 0-175.5-78.8-175.5-176 0-65.8 36-123.1 89.3-153.3 6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"></path></svg></span>
-          <input type="checkbox" class="input" onClick={() => setToggle(!toggle)} />
-          <span class="slider"></span>
-        </label>
+      <div className='section container toogle_theme-btn' >
+      <div class="toggle-switch">
+  <label class="switch-label">
+    <input type="checkbox" class="checkbox" onClick={changeTheme}/>
+    <span class="slider"></span>
+  </label>
+</div>  
       </div>
       <main className="main">
         <Home />
@@ -77,7 +80,7 @@ sr.reveal(
         <SKill />
         <Portfolio />
         <Service />
-        <Qulification />
+        {/* <Qulification /> */}
         {/* <Testimonial /> */}
         <Contact />
       </main>

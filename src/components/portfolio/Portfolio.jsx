@@ -17,11 +17,11 @@ const Portfolio = () => {
                         <img src={disneyplus} className='card__img' />
                     </div>
                     <div className="card__footer">
-                        <p className="portfolio__descripion">Lorem grrt erefs ipsum dolor sit amet consectetur adipisicing elit. Eius, suscipit.</p>
+                        <p className="portfolio__descripion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo alias quas quis, iste illo veniam ea numquam cumque delectus, sunt libero rem ipsum praesentium reprehenderit. Facere </p>
                     </div>
                     <div className="card__link">
-                        <a href="https://github.com/PrimeBeyonder"><i class="uil uil-github portfolio__icon"></i><span className='portfolio__subtitle'>Source Code</span></a>
-                        <a href="https://github.com/PrimeBeyonder"><i class="uil uil-clapper-board portfolio__icon"></i><span className='portfolio__subtitle'>Show Demo </span></a>
+                        <a href="https://github.com/PrimeBeyonder"><i class="uil uil-github portfolio__icon icon__protfolio"></i><span className='portfolio__subtitle'>Source Code</span></a>
+                        <a href="https://github.com/PrimeBeyonder"><i class="uil uil-clapper-board portfolio__icon icon__protfolio"></i><span className='portfolio__subtitle'>Show Demo </span></a>
                     </div>
                 </div>
                 <div className="portfolio__content">
@@ -32,11 +32,11 @@ const Portfolio = () => {
                         <img src={movieRatine} className='card__img' />
                     </div>
                     <div className="card__footer">
-                        <p className="portfolio__descripion">Lorem grrt erefs ipsum dolor sit amet consectetur adipisicing elit. Eius, suscipit.</p>
+                        <p className="portfolio__descripion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo alias quas quis, iste illo veniam ea numquam cumque delectus, sunt libero rem ipsum praesentium reprehenderit. Facere </p>
                     </div>
                     <div className="card__link">
-                        <a href="https://github.com/PrimeBeyonder"><i class="uil uil-github portfolio__icon"></i><span className='portfolio__subtitle'>Source Code</span></a>
-                        <a href="https://github.com/PrimeBeyonder"><i class="uil uil-clapper-board portfolio__icon"></i><span className='portfolio__subtitle'>Show Demo </span></a>
+                        <a href="https://github.com/PrimeBeyonder"><i class="uil uil-github portfolio__icon icon__protfolio"></i><span className='portfolio__subtitle'>Source Code</span></a>
+                        <a href="https://github.com/PrimeBeyonder"><i class="uil uil-clapper-board portfolio__icon icon__protfolio"></i><span className='portfolio__subtitle'>Show Demo </span></a>
                     </div>
                 </div>
                 <div className="portfolio__content">
@@ -47,11 +47,11 @@ const Portfolio = () => {
                         <img src={ecommerce} className='card__img' />
                     </div>
                     <div className="card__footer">
-                        <p className="portfolio__descripion">Lorem grrt erefs ipsum dolor sit amet consectetur adipisicing elit. Eius, suscipit.</p>
+                        <p className="portfolio__descripion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo alias quas quis, iste illo veniam ea numquam cumque delectus, sunt libero rem ipsum praesentium reprehenderit. Facere </p>
                     </div>
                     <div className="card__link">
-                        <a href="https://github.com/PrimeBeyonder"><i class="uil uil-github portfolio__icon"></i><span className='portfolio__subtitle'>Source Code</span></a>
-                        <a href="https://github.com/PrimeBeyonder"><i class="uil uil-clapper-board portfolio__icon"></i><span className='portfolio__subtitle'>Show Demo </span></a>
+                        <a href="https://github.com/PrimeBeyonder"><i class="uil uil-github portfolio__icon icon__protfolio"></i><span className='portfolio__subtitle'>Source Code</span></a>
+                        <a href="https://github.com/PrimeBeyonder"><i class="uil uil-clapper-board portfolio__icon icon__protfolio"></i><span className='portfolio__subtitle'>Show Demo </span></a>
                     </div>
                 </div>
             </div>

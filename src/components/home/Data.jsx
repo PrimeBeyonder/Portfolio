@@ -42,7 +42,7 @@ const Data = () => {
 
 
     return (
-        <div className="home__data" id='home'>
+        <div className="home__data" id='home_data-animation'>
             <h1 className="home__title">Andrew
             </h1>
 
@@ -50,7 +50,7 @@ const Data = () => {
                 <h3 className='home__subtitle'><span className="txt-rotate" dataPeriod="600" data-rotate='[ "Laravel Developer", "React Developer", "Junior Web Developer" ]'><span className="wrap">{text}</span></span></h3>
             </TrackVisibility>
 
-            <p className="home__description">
+            <p className="home__description" id='home__description-animation'>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus dicta ducimus voluptatum at. Quaerat est tenetur.
             </p>
             <a href="#contact" className="button button--flex">
