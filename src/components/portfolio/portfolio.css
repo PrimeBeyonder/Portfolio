@@ -94,3 +94,11 @@
         height: fit-content;
     }
 }
+@media screen and (max-width: 476px) {
+    .portfolio__container {
+        grid-template-columns: repeat(1, 320px);
+        justify-content: center;
+        column-gap: 2rem;
+        height: fit-content;
+    }
+}
